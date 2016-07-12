@@ -72,7 +72,7 @@ class SegDataLayer(caffe.Layer):
             self.idx = random.randint(0, len(self.imageindices)-1)
         else:
             self.idx += 1
-            if self.idx == len(self.indices):
+            if self.idx == len(self.imageindices):
                 self.idx = 0
 
 
